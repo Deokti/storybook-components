@@ -1,0 +1,87 @@
+$primary: #D9304F;
+$secondary: #588CA3;
+$succsess: #57D983;
+$warning: #F5CF6C;
+$danger: #FF6442;
+$info: #5AB5E8;
+
+.button {
+  cursor: pointer;
+  min-width: 100px;
+  min-height: 32px;
+  padding: 9px 14px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 4px;
+  border: none;
+
+  &:disabled {
+    background-color: #F5F5F5;
+    pointer-events: none;
+    cursor: auto;
+    color: #E3E3E3;
+    border: 1px solid #E3E3E3;
+  }
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 9px;
+  min-height: auto;
+  min-width: auto;
+  border-radius: 100%;
+}
+
+.loading {
+  pointer-events: none;
+  cursor: auto;
+  opacity: .7;
+}
+
+.primary {
+  background-color: $primary;
+  
+  &:hover {
+    background-color: #F26680;
+  }
+}
+.secondary {
+  background-color: $secondary;
+
+  &:hover {
+    background-color: #89BFD6;
+  }
+}
+.succsess {
+  background-color: $succsess;
+
+  &:hover {
+    background-color: #D3F8E0;
+  }
+}
+.warning {
+  background-color: $warning;
+
+  &:hover {
+    background-color: #FFF3D5;
+  }
+}
+.danger {
+  background-color: $danger;
+
+  &:hover {
+    background-color: #FFA7A2;
+  }
+}
+.info {
+  background-color: $info;
+
+  &:hover {
+    background-color: #7DD0FF;
+  }
+}
