@@ -10,6 +10,13 @@ export default {
 
 const TemplateButton: Story<ButtonProps> = (args: ButtonProps) => <Button {...args} />;
 
+// export const Primary = TemplateButton.bind({});
+
+// Primary.args = {
+//   children: 'Кнопка',
+//   disabled: true,
+// }
+
 export const Primary = TemplateButton.bind({});
 export const Secondary = TemplateButton.bind({});
 export const Succsess = TemplateButton.bind({});

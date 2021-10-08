@@ -1,0 +1,51 @@
+.label {
+  position: relative;
+  display: block;
+  max-width: 430px;
+  background-color: #fff;
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  
+  path {
+    fill: #E3E3E3;
+  }
+}
+
+.isValue {
+  path {
+    fill: #919191;
+  }
+}
+
+.input {
+  padding-left: 40px;
+  min-height: 40px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  border: 1px solid #E3E3E3;
+
+  font-size: 14px;
+  letter-spacing: 0.015em;
+  color: #2A2A2A;
+
+  &::placeholder {
+    color: #919191;
+  }
+
+  &:focus-visible {
+    outline: none;
+    border: 1px solid #919191;
+  }
+
+  &:focus + .icon {
+    path {
+      fill: #919191;
+    }
+  }
+}
